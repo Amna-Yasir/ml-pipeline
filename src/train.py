@@ -15,3 +15,6 @@ def train_model():
 
     print("Model trained and saved.")
     return clf
+
+if __name__ == "__main__":
+    train_model()
