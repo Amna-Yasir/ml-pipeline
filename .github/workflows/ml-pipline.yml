@@ -26,6 +26,10 @@ jobs:
       - name: Train model
         run: PYTHONPATH=src python src/train.py
 
+      - name: List model directory contents
+        run: ls -l model/
+      
+
       - name: Upload model artifact
         uses: actions/upload-artifact@v3
         with:
