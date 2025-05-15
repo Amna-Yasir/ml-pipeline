@@ -20,3 +20,9 @@ jobs:
         run: |
           PYTHONPATH=src python src/train.py
           ls -l model/
+
+      - name: Upload model artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: iris-model
+          path: model/iris_model.pkl
